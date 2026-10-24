@@ -11043,3 +11043,8 @@ figcaption {
 }
 /* Hide Webflow badge */
 .w-webflow-badge { display: none !important; }
+/* Header: tighten nav spacing on small desktops so all links fit on one row */
+@media screen and (min-width: 992px) and (max-width: 1099px) {
+  .nav-left { grid-column-gap: 16px; grid-row-gap: 16px; }
+  .navigation-link-hover-wrap { padding-left: 5px; padding-right: 5px; font-size: 15px; }
+}
